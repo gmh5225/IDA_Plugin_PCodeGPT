@@ -18,9 +18,13 @@ if not gpt_api_key:
     gpt_api_key = ''
     if len(gpt_api_key) == 0:
         print('[-] 请输入 OPENAI_API_KEY')
-gpt_model = 'gpt-3.5-turbo'
+gpt_model = 'gpt-4'
 gpt_base_url = ''
-gpt_proxy = None
+#gpt_proxy = None
+# Set your own proxy if necessary. (e.g. Clash)
+proxies = {'http': "http://127.0.0.1:7890", 'https': "http://127.0.0.1:7890"}
+openai.proxy = proxies
+
 
 client = openai.OpenAI(
     api_key = gpt_api_key,
