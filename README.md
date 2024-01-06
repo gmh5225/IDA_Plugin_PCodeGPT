@@ -10,3 +10,8 @@ This is a [gepetto](https://github.com/JusticeRage/Gepetto) and [WPeChatGPT](htt
 # Usage
 
 Move PCodeGPT.py into the plugins folder, and the plug-in will be automatically enabled when IDA starts.
+
+
+```
+pip install httpx
+```
